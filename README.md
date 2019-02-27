@@ -6,20 +6,21 @@ This is a [Heroku buildpack][0] for adding a [Julia binary][1] to your environme
 ## Versions
 
 * Buildpack: `0.3`
-* Julia: `1.0.0`
+* Julia: `1.1.0`
 
 
 ## Usage
 
 Add this line to the .buildpacks file in your project:
 
-`https://github.com/pinx/heroku-buildpack-julia.git`
+`https://github.com/mcgraths/heroku-buildpack-julia.git`
 
-or use the command `heroku buildpacks:set https://github.com/pinx/heroku-buildpack-julia.git`
+or use the command `heroku buildpacks:set https://github.com/mcgraths/heroku-buildpack-julia.git`
 
 In your project, create a file `package.jl` with any
 Julia code you want to run after installation.
 
+**Note**: Build will fail without installing any packages via `package.jl`
 
 ## Thanks
 
